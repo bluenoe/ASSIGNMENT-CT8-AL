@@ -1,0 +1,192 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+    padding: 0.5rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    width: 8rem;
+    height: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    background-color: #ff6b6b;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.6);
+    border-radius: 5px;
+}
+
+/* Content Section */
+.content {
+    padding: 10rem 5% 2rem;
+    text-align: center;
+}
+
+/* .welcome-box {
+    background: url('assets/images/food-image.jpg') center / cover;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);                     LOI GI DO CHUA FIX DUOC
+} */
+
+.content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content span {
+    color: #ff6b6b;
+}
+
+/* Recipe Section */
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 5%;
+}
+
+.box {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.box img {
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.box h3 {
+    margin: 1rem 0;
+}
+
+.box p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Store Section */
+.store-layout, .shops-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.store-box, .products {
+    display: flex;
+    gap: 2rem;
+}
+
+.subscribe-box, .subscription-box {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.subscribe-box h2, .subscription-box h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe-box p, .subscription-box p {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.subscribe-box input, .subscription-box input[type="email"], .subscription-box input[type="submit"] {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.subscribe-box button, .subscription-box input[type="submit"] {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.subscription-box input[type="submit"]:hover {
+    background-color: #ff3b3b;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 5%;
+    margin-top: 2rem;
+}
+
+.footer .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.footer .box {
+    box-shadow: none;
+    text-align: left;
+}
+
+.footer .box h3, .footer .box a {
+    color: #fff;
+}
+
+.footer .box a {
+    display: block;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.footer .box a i {
+    margin-right: 0.5rem;
+}
+
+.credit {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #555;
+}
+
+.payment-icons img {
+    width: 30px; 
+    height: auto; 
+    vertical-align: middle; 
+}
